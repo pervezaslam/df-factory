@@ -1,0 +1,20 @@
+{
+	"name": "Parquet_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datalakestorageacct999_service",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "parquet"
+			},
+			"compressionCodec": "none"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

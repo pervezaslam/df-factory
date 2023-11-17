@@ -1,0 +1,12 @@
+{
+	"name": "dataworkspace786_pooldb_service",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDW",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=dataworkspace786.sql.azuresynapse.net;initial catalog=dedictedsqlpooldb;user id=sqladminuser",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDQ5Q0M1RDA3LTc2QzYtNEE4Mi1CRDcxLTczRUZBRTU4NTc5NV83MzFjMWIxNy1lMmEyLTQzNmUtYTMwMi04Mjc1YjJkNmI1ZmQiDQp9"
+		}
+	}
+}

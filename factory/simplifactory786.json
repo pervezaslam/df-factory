@@ -1,0 +1,9 @@
+{
+	"name": "simplifactory786",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8844f21d-718c-465d-ba46-ade7c8eaea93",
+		"tenantId": "114faf49-e3ee-447c-8c94-092153ecbe28"
+	}
+}

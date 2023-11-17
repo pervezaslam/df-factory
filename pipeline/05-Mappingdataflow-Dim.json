@@ -1,0 +1,41 @@
+{
+	"name": "05-Mappingdataflow-Dim",
+	"properties": {
+		"activities": [
+			{
+				"name": "dataflowDimension",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "02_dataflow_Dim",
+						"type": "DataFlowReference"
+					},
+					"staging": {
+						"linkedService": {
+							"referenceName": "datalakestorageacct999_service",
+							"type": "LinkedServiceReference"
+						},
+						"folderPath": "csv"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-11-15T06:37:02Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
